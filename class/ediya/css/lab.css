@@ -1,0 +1,174 @@
+header { background: transparent; }
+header a { color: #fff; }
+.bg { background: #000; }
+.brand a { color: #fff; }
+.lang, .lang > ul { background: #000; }
+.lang > a { background-image: url(../images/images/common/language_arrow_b.gif); }
+.main:hover > a { color: #fff; }
+.main > a::before, .main > a::after { background: #fff; }
+.submenu a { color: #fff; }
+.submenu a:hover { color: #fff; }
+header.on { background: #000; border-bottom: 1px solid #333; }
+@media screen and (min-width: 1181px) {
+	.header-sns a { background-image: url(../images/images/common/top_sns01_b.gif); }
+	.ins > a { background-image: url(../images/images/common/top_sns02_b.gif); }
+	.fb > a { background-image: url(../images/images/common/top_sns03_b.gif); }
+	.yt > a { background-image: url(../images/images/common/top_sns04_b.gif); }
+}
+
+.lab_pc { display: block; }
+.lab_m { display: none; }
+
+@media screen and (max-width: 1180px) {
+	.header-bottom { background: #fff; }
+	.brand a { color: #1d326c; }
+	.lab_pc { display: none; }
+	.lab_m { display: block; }
+}
+
+#container { padding-top: 0; position: relative; }
+.sub-visual { height: 1040px; background: url(../images/images/coffee/lab_menu_visual.jpg) no-repeat center center / cover; color: #fff; }
+.sub-visual-wrap { padding-top: 130px; height: 1040px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; box-sizing: border-box; }
+.visual-img { background: url(../images/images/coffee/lab_menu_tt.png) no-repeat center top; padding-top: 260px; width: 267px; }
+.sub-visual strong { font-size: 38px; }
+.visual-txt { font-size: 18px; margin-top: 4px; margin-bottom: 280px; }
+.visual-menu { width: 356px; display: flex; position: absolute; top: 700px; left: 50%; margin-left: -178px; }
+.visual-menu > li { border: 1px solid #fff; flex: 1 1 0; text-align: center; }
+.visual-menu > .on { background: #fff; }
+.visual-menu a { font-size: 13px; color: #fff; height: 37px; display: inline-block; line-height: 37px; }
+.visual-menu > .on > a { color: #222; }
+
+@media screen and (max-width: 1180px) {
+	.sub-visual { height: 310px; }
+	.sub-visual-wrap { padding-top: 90px; height: 310px; }
+	.visual-img { padding-top: 0; background-image: url(../images/images/coffee/lab_menu_tt_m.png); width: 135px; height: 32px; background-size: 100%; }
+	.sub-visual strong { display: none; }
+	.visual-txt { margin-bottom: 0; color: #b9b8b8; margin-top: 16px; }
+	.visual-menu { position: relative; top: 0; left: 0; margin: auto; width: 100%;  }
+	.visual-menu > li { border-color: #84847c; }
+	.visual-menu > .on { background: #84847c; }
+	.visual-menu a { color: #84847c; }
+	.visual-menu .on > a { color: #fff; }
+}
+@media screen and (max-width: 640px) {
+	.visual-txt { display: none; }
+}
+
+
+/* labo-wrap */
+.labo-wrap { background: url(../images/images/coffee/lab_block01_bg.jpg) no-repeat center top / cover; padding: 100px 0; }
+.txt-title > h2 { font-size: 35px; color: #fff; margin-bottom: 60px; text-align: center; font-weight: normal; }
+.txt-title > h2::after { content: ""; display: block; width: 30px; height: 3px; background: #fff; margin: 20px auto; }
+.labo { max-width: 1180px; height: 905px; margin: 0 auto; background: url(../images/images/coffee/lab_block01_map.png) no-repeat center center; position: relative; }
+.labo > img { display: none; }
+.labo li { position: absolute; left: 11%; top: 38%; }
+.labo .magfi2 { left: 42%; top: 32%; }
+.labo .magfi3 { left: 62%; top: 72%; }
+.labo .magfi4 { left: 75%; top: 50%; }
+.labo > ol a { display: block; height: 100%; }
+
+@media screen and (max-width: 1180px) {
+	.labo { background-size: 95%; height: 850px; }
+}
+@media screen and (max-width: 960px) {
+	.labo-wrap { padding: 60px 0; }
+	.labo { background: none; width: auto; height: auto; }
+	.labo > img { display: block; width: 100%; }
+}
+@media screen and (max-width: 640px) {
+	.txt-title > h2 { font-size: 25px; }
+}
+
+/* lab-wrap */
+.title-wrap { padding: 90px 0 150px; background: url(../images/images/coffee/lab_block02_bg.jpg) no-repeat center top / cover; }
+.title-wrap > h2 { margin-bottom: 20px; line-height: 1.0; } 
+.title-wrap > h2::after { background: #9a7349; }
+.txt-title strong { display: block; }
+.title-wrap > p { font-size: 16px; text-align: center; color: #fff; margin-bottom: 30px; }
+.lab-slide { max-width: 1000px; width: 90%; margin: 0 auto; }
+.slick-slide img { width: 100%; }
+.slide-dots { text-align: center; position: absolute; bottom: 12px; width: 100%; /*background: navy;*/ }
+.slide-dots li { display: inline-block; margin: 0 4px; }
+.slide-dots button { text-indent: -9999px; border: none; width: 27px; height: 4px; background: #b9b9b9; }
+.slide-dots button:focus { outline: none; }
+.slick-active button { background: #fff; }
+
+@media screen and (max-width: 980px) {
+	.lab-wrap { padding: 90px 0 40px; }
+}
+
+/* special-wrap */
+.special-wrap { background-image: url(../images/images/coffee/lab_block03_bg.jpg); }
+.tab-wrap { max-width: 1180px; width: 100%; margin: 0 auto; position: relative; }
+/* .tab-on height값은 section값 받아서 li에 높이 설정 하기 */
+.tab-wrap span, .tab-wrap h3 { color: #9a7349; font-size: 24px; font-weight: bold; }
+.tab-on > span { color: #fff; }
+.tab-wrap li > span { padding-right: 12px; cursor: pointer; }
+.tab-wrap li:last-child > span { padding-left: 12px; }
+
+.tab-wrap > ul > li { float: left; width: 50%; }
+.tab-wrap > ul > li:first-child { text-align: right; }
+.tab-wrap .line::after { content: ""; display: inline-block; width: 1px; height: 18px; background: #9a7349; }
+.card-wrap { display: none; width: 100%; position: absolute; left: 0; }
+.tab-on section { display: block; }
+
+.first, .second { background: url(../images/images/coffee/lab_block03_line.png) no-repeat center top; padding-top: 24px; box-sizing: border-box; }
+.second { margin-top: 50px; }
+.tab-wrap h3 { text-align: center; font-weight: normal; }
+.card-wrap ul { text-align: center; padding: 20px 0; }
+.card-wrap li { display: inline-block; margin: 0 20px 20px 0; }
+/*.card-wrap li:last-child { margin-right: 0; }*/
+.card-wrap li img { width: 100%; }
+
+@media screen and (max-width: 1024px) {
+	.tab-wrap span, .tab-wrap h3 { font-size: 20px; }
+}
+
+@media screen and (max-width: 480px) {
+	.tab-wrap { height: 1125px; }
+	.card-wrap li { margin: 0 10px 20px; }
+}
+
+/* bakery-wrap */
+.bakery-wrap { background-image: url(../images/images/coffee/lab_block04_bg.jpg); background-size: 105%;  position: relative; }
+.bakery-wrap > ul { text-align: center; width: 100%; }
+.bakery-wrap li { display: inline-block; }
+.bakery-wrap li:nth-child(3) { margin: 5% 180px 0; }
+.bakery-wrap a { display: block; height: 100%; }
+.bakery-wrap span { display: block; color: #fff; font-size: 16px; margin-top: 4px; }
+
+.bakery-wrap .popup { max-width: 600px; width: 85%; position: absolute; left: 50%; top: 28%; transform: translateX(-50%); display: none; }
+.bakery-wrap .popup.active { display: block; }
+
+.bakery-wrap .popup > img { width: 100%; height: auto; }
+.bakery-wrap .popup > span { display: inline-block; text-indent: -9999px; width: 23px; height: 22px; background: url(../images/images/coffee/lab_block01_close.png) no-repeat right top / 100%; position: relative; left: 266px; top: -370px; cursor: pointer; }
+
+@media screen and (max-width: 1800px) {
+	.bakery-wrap { background-size: cover; }
+}
+@media screen and (max-width: 980px) {
+	.bakery-wrap { padding: 70px 0; }
+	.bakery-wrap img { width: auto; height: 52px; }
+	.bakery-wrap .popup { top: 8%; }
+}
+@media screen and (max-width: 768px) {
+	.bakery-wrap .popup { max-width: 400px; top: 33%; }
+	.bakery-wrap .popup > span { left: 173px; top: -248px; }
+}
+@media screen and (max-width: 680px) {
+	.bakery-wrap li:nth-child(3) { margin: 5% 50px 0; }
+}
+@media screen and (max-width: 480px) {
+	.bakery-wrap p { font-size: 14px; width: 90%; margin: 0 auto; }
+	.bakery-wrap br { display: none; }
+	.bakery-wrap .popup { max-width: 300px; }
+	.bakery-wrap .popup > span { left: 122px; top: -186px; }
+}
+
+/* md-wrap */
+.md-wrap { background-image: url(../images/images/coffee/lab_block05_bg.jpg); }
+
+@media screen and (max-width: 1000px) {
+	.md-wrap { padding-bottom: 0; }
+	.responsiveGallery-btn { top: -10%; }
+}

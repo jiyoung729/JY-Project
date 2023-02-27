@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="디케이지홀딩스는 다양한 노하우를 가진 전문가들로 구성된 믿을 수 있는 부동산개발 전문기업입니다.">
+		<meta name="author" content="디케이지홀딩스">
+		<meta name="keywords" content="디케이지홀딩스, 부동산개발">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- IE브라우저에서, 각 버전 중 가장 최신 표준 모드를 선택하는 문서 모드 -->
+		<meta property="og:title" content="디케이지홀딩스">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://www.dkgholdings.co.kr/">
+		<meta property="og:image" content="http://www.dkgholdings.co.kr/images/contents/ci_new.png">
+		<meta property="og:description" content="디케이지홀딩스는 다양한 노하우를 가진 전문가들로 구성된 믿을 수 있는 부동산개발 전문기업입니다.">
+		<link rel="canonical" href="http://www.dkgholdings.co.kr/"> 
+		<!-- 표기되어있는 url이 “표준 페이지”라고 알려주는 역할 -->
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../../reset.css">
+		<link rel="stylesheet" href="../../fullpage/fullpage.css">
+		<link rel="stylesheet" href="../../slick/slick.css">
+		<link rel="stylesheet" href="css/main.css">
+		<title>디케이지홀딩스</title>
+		<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+		<script src="../../js/jquery-3.5.1.min.js"></script>
+		<script src="../../js/fullpage.js"></script>
+		<script src="../../js/slick.min.js"></script>
+		<style>		
+			.myContent { height: 250px; }
+		</style>
+	</head>
+	<body>	
+		<header class="clearfix">
+			<h1><a href="#">디케이지홀딩스</a></h1>
+			<nav>
+				<ul class="main-nav">
+					<li class="mainmenu">
+						<a href="#">디케이지홀딩스</a>	
+						<div class="submenu">
+							<ul>
+								<li><a href="#">CEO 인사말</a></li>
+								<li><a href="#">회사소개</a></li>
+								<li><a href="#">연혁</a></li>
+								<li><a href="#">조직도</a></li>
+								<li><a href="#">오시는 길</a></li>
+								<li><a href="#">채용안내</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mainmenu">
+						<a href="#">사업영역</a>	
+						<div class="submenu">
+							<ul>
+								<li><a href="#">개발부문</a></li>
+								<li><a href="#">마케팅부문</a></li>
+								<li><a href="#">PM/컨설팅</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mainmenu">
+						<a href="#">포트폴리오</a>	
+						<div class="submenu">
+							<ul>
+								<li><a href="#">포트폴리오</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mainmenu">
+						<a href="#">고객지원</a>	
+						<div class="submenu">
+							<ul>
+								<li><a href="#">회사소개서</a></li>
+								<li><a href="#">온라인문의</a></li>
+								<li><a href="#">공지사항</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<div class="bg"></div>
+			</nav>
+			
+			<div class="ham-btn">
+				<span>메뉴버튼</span>
+			</div>
+			<div class="navi">
+				<ul class="sub-nav">
+					<li class="mainmenu clearfix">
+						<a href="#">디케이지홀딩스</a>	
+						<div class="submenu">
+							<ul>
+								<li><a href="#">CEO 인사말</a></li>
+								<li><a href="#">회사소개</a></li>
+								<li><a href="#">연혁</a></li>
+								<li><a href="#">조직도</a></li>
+								<li><a href="#">오시는 길</a></li>
+								<li><a href="#">채용안내</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mainmenu clearfix">
+						<a href="#">사업영역</a>	
+						<div class="submenu">
+							<ul>
+								<li><a href="#">개발부문</a></li>
+								<li><a href="#">마케팅부문</a></li>
+								<li><a href="#">PM/컨설팅</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mainmenu clearfix">
+						<a href="#">포트폴리오</a>	
+						<div class="submenu">
+							<ul>
+								<li><a href="#">포트폴리오</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="mainmenu clearfix">
+						<a href="#">고객지원</a>	
+						<div class="submenu cancel">
+							<ul>
+								<li><a href="#">회사소개서</a></li>
+								<li><a href="#">온라인문의</a></li>
+								<li><a href="#">공지사항</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div><!-- navi -->
+		</header>
+		<script>
+			$(function(){
+				$('header').addClass('over');
+
+				$('nav, bg').on("mouseenter focus", function(){
+					$('header').addClass('on')
+				});
+				$('nav, bg').on("mouseleave blur", function(){
+					$('header').removeClass('on')
+				});
+
+				$('.ham-btn').on("click", function(){
+					$(this).toggleClass('active');
+					$('.navi').toggleClass('on');
+				})
+			})
+		</script>
+		<ul class="quick-menu">
+			<li class="tab-menu on"><a href="#Main">Main</a></li>
+			<li class="tab-menu"><a href="#Business">Business</a></li>
+			<li class="tab-menu"><a href="#Portfolio">Portfolio</a></li>
+			<li class="tab-menu"><a href="#Community">Community</a></li>
+		</ul>
+		<script>
+			$(function(){
+				$('.quick-menu').addClass('on');
+				$('.quick-menu > li').on('click', function(){
+					$('.quick-menu > li').not().removeClass('on')
+					$(this).addClass('on')
+				})
+			})
+		</script>
+		<div id="fullpage">	
+			<div class="section sec1">
+				<div class="text-wrap">
+					<span>WE WILL MAKE IT HAPPEN</span>
+					<p>다양한 분야의 개발사업을 통해<br>
+					고객만족을 실현하는 최고의 <strong>부동산 개발 전문기업</strong></p>
+				</div>
+				<em>잠실 푸르지오 월드마크</em>
+			</div><!-- sec1 -->
+			<div class="section sec2">
+				<div class="text-wrap">
+					<span>BUSINESS</span>
+					<p>최고의 전문가들이 시작부터 준공까지 참여하여<br>
+					고객의 모든 요구를 가능하게 만드는 <strong>부동산 개발 전문기업</strong></p>
+				</div>
+				<ul>
+					<li class="icon1">
+						<strong>개발부분</strong>
+						<p>공동주택&주상복합&오피스텔, 도시개발사업,<br>택지개발지구 주택사업,  복합용도개발사업, <br>공모사업</p>
+					</li>
+					<li class="icon2">
+						<strong>마케팅부분</strong>
+						<p>상품분석, 입지 및 분양환경 분석, <br> 마케팅 전략수립</p>
+					</li>
+					<li class="icon3">
+						<strong>PM/컨설팅</strong>
+						<p>사업성검토 및 환경분석, 토지매입, <br> 컨셉 및 상품 기획 등</p>
+					</li>
+				</ul>
+			</div><!-- sec2 -->
+			<div class="section sec3">
+				<div class="text-wrap">
+					<span>PORTFOLIO</span>
+					<p>최고의 부동산 개발 전문가들이 진행한<br>
+					<strong>최고의 결과물</strong></p>
+					<a href="#;">VIEW MORE</a>
+				</div>
+				<div class="sec3-slide">
+					<div class="pic1">
+						<a href="#;">
+							<img src="img/main/o_1dd2f2gso12aqlg9q0p1h1nqfqa.jpg" alt="법곳대화지구 도시개발사업">
+							<strong>법곳대화지구 도시개발사업</strong>
+						</a>
+					</div>
+					<div class="pic2">
+						<a href="#;">
+							<img src="img/main/o_1dd2fl7lq5pa8pf62s1mnk1k05a.jpg" alt="경기 광주 센트럴푸르지오">
+							<strong>경기 광주 센트럴푸르지오</strong>
+						</a>
+					</div>
+					<div class="pic3">
+						<a href="#;">
+							<img src="img/main/o_1dd2fmnt71e0e5aaril3qgq2va.jpg" alt="천호역 한강푸르지오 시티">
+							<strong>천호역 한강푸르지오 시티</strong>
+						</a>
+					</div>
+				</div>
+			</div><!-- sec3 -->
+			<script>
+				$(function(){
+					$('.sec3-slide').slick({
+	                    arrows: false,
+	                    slidesToShow: 3,
+	                    slideToScroll: 1,
+	                    responsive: [
+	                      {
+	                        breakpoint: 1100,
+	                        settings: {
+	                          arrows: true,
+	                          slidesToShow: 2
+	                        }
+	                      },
+	                      {
+	                        breakpoint: 768,
+	                        settings: {
+	                          arrows: true,
+	                          slidesToShow: 1
+	                        }
+	                      }
+	                    ]
+	               });
+				});
+			</script>
+			<div class="section sec4">
+				<div class="text-wrap">
+					<span>COMMUNITY</span>
+					<p>다양한 경험을 통한 최적의<br>
+					<strong>개발 방안 제공</strong></p>
+				</div>
+				<ul class="board-list">
+					<li class="icon1"><a href="#;">회사소개서</a></li>
+					<li class="icon2"><a href="#;">온라인문의</a></li>
+					<li class="icon3"><a href="#;">공지사항</a></li>
+				</ul>
+			</div><!-- sec4 -->
+			<div class="section fp-auto-height">
+				<div class="myContent">
+					<strong><a href="#;">개인정보취급방침</a></strong>
+					<p>㈜디케이지홀딩스 대표 : 강민성</p>
+					<address>주소 : 서울특별시 강남구 테헤란로 447 KB우준타워 8층 <span>TEL. 02-553-7410,7430</span> FAX. 02-553-7409</address>
+					<p>Copyright © 2019 DKG Holdings All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		<div class="scroll">
+			<span>Scroll</span>
+			<img src="img/main/icon_scroll.png" alt="arrow">
+		</div>
+		<script>
+		  var myFullpage = new fullpage('#fullpage', {
+		      verticalCentered: true,
+		      anchors: ['Main', 'Business', 'Portfolio', 'Community', 'footer'],
+		      menu: '#menu',
+		      sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#BBFA93']
+		  });
+		</script>
+	</body>
+</html>
