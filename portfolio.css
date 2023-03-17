@@ -142,6 +142,11 @@ span:nth-child(9) {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 980px) {
+  .intro .bg img {
+    width: 120%;
+  }
+}
 @media screen and (max-width: 780px) {
   .intro {
     padding: 24% 0;
@@ -480,7 +485,7 @@ span:nth-child(9) {
   padding-bottom: 45px;
 }
 .portfolio p > a {
-  width: 116px;
+  width: auto;
   display: inline-block;
   border: 0;
   border-radius: 0;
@@ -495,13 +500,23 @@ span:nth-child(9) {
 .portfolio p > a::before {
   content: "";
   display: inline-block;
-  width: 118px;
-  height: 9px;
+  width: 100%;
+  height: 20px;
   background: rgba(255, 238, 53, 0.5);
   position: absolute;
   right: 0;
-  bottom: 8px;
+  top: 10px;
   z-index: -1;
+  animation: twinkles 0.5s ease-in-out 1s infinite alternate;
+}
+
+@keyframes twinkles {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .portfolio a {
@@ -634,9 +649,7 @@ span:nth-child(9) {
     width: 90%;
   }
   .portfolio p > a::before {
-    width: 100px;
-    right: 8px;
-    bottom: 15px;
+    top: 5px;
   }
   .p-right::after {
     font-size: 48px;
@@ -1025,7 +1038,9 @@ span:nth-child(9) {
   width: 100%;
   height: 155px;
   overflow: hidden;
+  background: #000;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 .list-img > a {
   display: block;
@@ -1036,6 +1051,12 @@ span:nth-child(9) {
 }
 .list-img img {
   width: 100%;
+}
+.list-img img.short-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .listtab {
@@ -1135,25 +1156,13 @@ span:nth-child(9) {
   .port3 .list {
     max-width: 274px;
   }
-  .dkg-box img {
-    width: 114%;
-    position: relative;
-    left: -6px;
-  }
-  .todo-list img,
-  .paint img {
-    width: 118%;
-    position: relative;
-    left: -22px;
-  }
   .list-txt {
     max-width: 240px;
   }
 }
 @media screen and (max-width: 980px) {
   .portfolio.port3::before {
-    top: 30%;
-    height: 622px;
+    height: 484px;
   }
   .port3 .p-txtbox {
     max-width: 400px;
@@ -1173,17 +1182,6 @@ span:nth-child(9) {
   }
   .list-txt > p {
     font-size: 14px;
-  }
-  .dkg-box img {
-    width: 120%;
-    position: relative;
-    left: -14px;
-  }
-  .todo-list img,
-  .paint img {
-    width: 125%;
-    position: relative;
-    left: -30px;
   }
 }
 @media screen and (max-width: 420px) {
